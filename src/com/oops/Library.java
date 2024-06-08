@@ -51,14 +51,12 @@ class Library{
 
         
         Book newBook = new Book(bookID, newTitle, newAuthor, isAvailable1);   
-        //boolean bookFound = false;
         for (int i = 0; i < books.length; i++) {
         if(books[i] != null && books[i].getbookID() == bookID)
           {
         	Book newBook1 = new Book(bookID, newTitle,newAuthor, isAvailable1);
             books[i] = newBook1; 
             System.out.println("Book at index " + bookID + " replaced with: " + newBook);
-            //bookFound = true;
             break;
           }
         }
