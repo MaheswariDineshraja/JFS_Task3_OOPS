@@ -50,7 +50,7 @@ public class BookManagementSystem {
 	                String title = scanner.nextLine();
 	                System.out.print("Book Author: ");
 	                String author = scanner.nextLine();
-	                System.out.print("Is the book available? (true/false): ");
+	                System.out.print("Is the book available: ");
 	                boolean isAvailable = scanner.nextBoolean();
 	
 	                Book = new Book(bookid, title, author, isAvailable);
